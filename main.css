@@ -1,0 +1,17 @@
+@font-face {
+    font-family:Bahij Titr-Bold;
+    src: url(../fonts/Bahij\ Titr-Bold.ttf);
+}
+
+*{
+    direction: rtl;
+    font-family:Bahij Titr-Bold;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,116 @@
+.create-login-container {
+  background: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(231, 231, 231) 0%,
+    rgb(168, 168, 166) 90%
+  );
+  height: 100vh;
+  padding: 60px;
+}
+
+.login-box-c {
+  font-size: 1.1em;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 30px;
+  margin-right: 30%;
+  width: 300px;
+  height: 700px;
+  margin-left: 100px;
+  background-color: rgb(241, 241, 241);
+}
+
+.login-box-c form .input-group {
+  margin: 20px 20px;
+}
+
+.login-box-c form .input-group lable {
+  display: block;
+}
+
+.login-box-c form .input-group input {
+  border: none;
+  border-radius: 20px;
+  background: none;
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+}
+
+.login-box-c form .submit-btn-container {
+  text-align: center;
+}
+.login-box-c form .submit-btn-container input {
+  font-size: 1.2em;
+  border-radius: 40px;
+  color: white;
+  background-color: #e61c1cf1;
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.login-box-c .social-auth {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(19, 16, 16);
+  margin: 10px;
+  padding: 10px;
+}
+
+.login-box-c .social-auth i {
+  color: black;
+  font-size: 1.2em;
+}
+
+.login-box-c-1 .note {
+  font-size: 1.3em;
+  margin-right: 25%;
+  margin-top: 30%;
+  color: #ee3309;
+  font-style: italic;
+}
+/* button */
+btn-container {
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 25%;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #fff;
+  width: 50%;
+  padding: 24px;
+  border-radius: 4px;
+  color: black;
+  font-size: 1.5em;
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 2;
+}
