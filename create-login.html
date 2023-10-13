@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/create-login.css" />
+  <link rel="stylesheet" href="./css/flexboxgid.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <title>ایجاد حساب کاربری</title>
+</head>
+
+<body>
+  <main>
+    <!-- Create-Login -->
+    <section class="create-login-container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="login-box-c">
+            <form action="">
+              <div class="input-group">
+                <label for="">نام کاربری:*</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">کد ملی:</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">ایمیل:*</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">شماره همراه:*</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">رمز عبور:*</label>
+                <input type="text" />
+              </div>
+            </form>
+            <div class="btn-container">
+              <button id="btn3">ثبت نام </button>
+            </div>
+            <div id="mask" class="hidden"></div>
+            <section id="modal" class="hidden">
+              <p>ثبت نام شما با موفقیت انجام شد ،به گُل‌سِتان خوش آمدید.</p>
+              <span style="font-size: 2em;">&#127801;</span>
+            </section>
+            <div class="social-auth">
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="login-box-c-1">
+            <div class="note">
+              لطفا قسمت های ستاره دار را حتما وارد کنید
+              <br>
+              از همکاری شما عزیزان سپاسگزاریم
+              <span style="font-size: 1.5em;"> &#128522;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script>const btn3 = document.getElementById('btn3');
+    const mask = document.getElementById('mask');
+    const modal = document.getElementById('modal');
+
+    btn3.addEventListener('click', () => {
+      mask.classList.remove('hidden');
+      modal.classList.remove('hidden');
+    });
+
+    mask.addEventListener('click', () => {
+      mask.classList.add('hidden');
+      modal.classList.add('hidden');
+    });</script>
+</body>
+
+</html>

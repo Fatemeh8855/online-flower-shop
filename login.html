@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="stylesheet" href="./css/flexboxgid.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <title>ثبت نام |ورود</title>
+</head>
+
+<body>
+  <main>
+    <!-- LOGIN -->
+    <div class="login-container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="login-box">
+            <form action="">
+              <div class="input-group">
+                <label for="">نام کاربری:</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">رمز عبور:</label>
+                <input type="text" />
+              </div>
+              <p class="do-you-have">
+                حساب کاربری ندارید ؟
+                <a href="create-login.html">ایجاد حساب کاربری</a>
+                کمتر از یک دقیقه وقت شما را خواهد گرفت.
+              </p>
+              <div class="submit-btn-container">
+                <input type="button" style="font-size: 1em;" value="ورود" onclick="location.assign('Home.html')">
+              </div>
+            </form>
+            <div class="social-auth">
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="login-img-container">
+            <img src="./images/svg/login.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
