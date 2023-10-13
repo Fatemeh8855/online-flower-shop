@@ -1,0 +1,900 @@
+hearer {
+  font-size: 1em;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  font-size: 1.2em;
+  align-items: center;
+  background: white;
+}
+header nav .nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-right .img {
+  width: 200px;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header nav .nav-center .dropdown .dropbtn i {
+  color: #158035;
+  padding: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+}
+
+header nav .nav-center a:hover {
+  background-color: rgb(202, 200, 196);
+  padding: 20px;
+  transition: 0.95s;
+  border-radius: 20px;
+}
+
+header nav .nav-left {
+  display: flex;
+}
+
+header nav .nav-left .shop-basket {
+  display: flex;
+  align-items: center;
+  border: 2px solid #2e2b11;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+header nav .nav-left .shop-basket a {
+  color: black;
+  padding: 8px;
+  display: flex;
+  transition: 0.6s;
+}
+
+header nav .nav-left .shop-basket i {
+  padding-right: 10px;
+}
+
+header nav .nav-left .shop-basket a:hover {
+  color: #158035;
+  transition: 0.3s;
+}
+
+header nav .nav-left .register-login {
+  display: flex;
+  align-items: center;
+  border: 2px solid #2e2b11;
+  border-radius: 10px;
+}
+
+header nav .nav-left .register-login a {
+  color: black;
+  padding: 8px;
+  display: flex;
+}
+
+header nav .nav-left .register-login a:hover {
+  color: #158035;
+  transition: 0.3s;
+}
+
+/* slider section */
+
+.slider {
+  position: relative;
+  font-size: 1.6em;
+}
+
+.slider .slides .item {
+  position: relative;
+  display: none;
+}
+
+.slider .slides .item img {
+  width: 100%;
+  height: 800px;
+  border-radius: 80px;
+}
+.slider .slides .item span {
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  font-size: 1.2em;
+  color: white;
+  animation: bounceIn;
+  animation-duration: 2s;
+  font-style: italic;
+}
+.slider .slides .item span:hover {
+  font-size: 1.3em;
+  color: #158035;
+  cursor: pointer;
+}
+
+.slider .slides .active button {
+  position: absolute;
+  right: 20%;
+  top: 70%;
+  color: black;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 60px;
+  padding: 10px;
+  background-color: white;
+}
+
+.slider .slides .active button:hover {
+  color: #158035;
+}
+
+.slider .slides .active {
+  display: block;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+.slider .buttons {
+  position: absolute;
+  bottom: 3px;
+  left: 40px;
+  z-index: 1;
+}
+.slider .buttons {
+  color: white;
+  margin-right: 7px;
+  cursor: pointer;
+}
+.slider .buttons i:hover {
+  color: #158035;
+}
+
+/* dragble-list1-products */
+
+.dragble-list1-products {
+}
+.owl-stage-outer {
+  direction: ltr;
+  text-align: center;
+  background-color: rgb(226, 223, 218);
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 150px;
+}
+
+.dragble-list1-products .dragble-list-title {
+  font-size: 1.7em;
+  margin: 100px;
+  text-align: center;
+  text-decoration: underline;
+  color: #ee3309;
+}
+
+.dragble-list1-products .shoping-card-d {
+  border-radius: 50px;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.dragble-list1-products .shoping-card-d:hover {
+}
+.dragble-list1-products .item .shoping-card-d img {
+  align-items: center;
+  width: 250px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.dragble-list1-products .item .shoping-card-d img:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  cursor: pointer;
+  border: 1px black solid;
+}
+
+.dragble-list1-products .item .shoping-card-d .title {
+  font-size: 1.3em;
+  color: black;
+  padding-left: 100px;
+}
+.dragble-list1-products .shoping-card-d .button .right .price {
+  font-size: 1.2em;
+  padding-left: 100px;
+  padding-top: 60px;
+}
+.dragble-list1-products .shoping-card-d .button .left {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.dragble-list1-products .shoping-card-d .button .left .extend-btn {
+  margin-left: 30px;
+  font-size: 1em;
+  display: flex;
+  color: white;
+  background-color: rgb(231, 69, 69);
+  width: 60px;
+  border-radius: 20px;
+  transition: 0.75s;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+.dragble-list1-products .shoping-card-d .button .left .extend-btn .b-text {
+  color: white;
+  display: none;
+  padding-left: 30px;
+}
+.dragble-list1-products
+  .shoping-card-d
+  .button
+  .left
+  .extend-btn:hover
+  .b-text {
+  color: white;
+  display: block;
+}
+
+.dragble-list1-products .shoping-card-d .button .left .extend-btn .b-icon {
+  color: white;
+}
+
+.dragble-list1-products .shoping-card-d .button .left .extend-btn:hover {
+  width: 80px;
+  font-size: 1.2em;
+}
+
+/* dragble-list2-products */
+
+.dragble-list2-products {
+}
+.owl-stage-outer {
+  direction: ltr;
+  text-align: center;
+}
+
+.dragble-list2-products .dragble-list-title {
+  font-size: 1.7em;
+  margin: 100px;
+  text-align: center;
+  text-decoration: underline;
+  color: #ee3309;
+}
+
+.dragble-list2-products .shoping-card-d {
+  border-radius: 50px;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.dragble-list2-products .shoping-card-d:hover {
+}
+.dragble-list2-products .item .shoping-card-d img {
+  align-items: center;
+  width: 250px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.dragble-list2-products .item .shoping-card-d img:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  cursor: pointer;
+  border: 1px black solid;
+}
+
+.dragble-list2-products .item .shoping-card-d .title {
+  font-size: 1.3em;
+  color: black;
+  padding-left: 100px;
+}
+.dragble-list2-products .shoping-card-d .button .right .price {
+  font-size: 1.2em;
+  padding-left: 100px;
+  padding-top: 60px;
+}
+.dragble-list2-products .shoping-card-d .button .left {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.dragble-list2-products .shoping-card-d .button .left .extend-btn {
+  margin-left: 30px;
+  font-size: 1em;
+  display: flex;
+  color: white;
+  background-color: rgb(231, 69, 69);
+  width: 60px;
+  border-radius: 20px;
+  transition: 0.75s;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+.dragble-list2-products .shoping-card-d .button .left .extend-btn .b-text {
+  color: white;
+  display: none;
+  padding-left: 30px;
+}
+.dragble-list2-products
+  .shoping-card-d
+  .button
+  .left
+  .extend-btn:hover
+  .b-text {
+  color: white;
+  display: block;
+}
+
+.dragble-list2-products .shoping-card-d .button .left .extend-btn .b-icon {
+  color: white;
+}
+
+.dragble-list2-products .shoping-card-d .button .left .extend-btn:hover {
+  width: 80px;
+  font-size: 1.2em;
+}
+
+/* dragble-list3-products */
+
+.dragble-list3-products {
+}
+.owl-stage-outer {
+  direction: ltr;
+  text-align: center;
+}
+
+.dragble-list3-products .dragble-list-title {
+  font-size: 1.7em;
+  margin: 100px;
+  text-align: center;
+  text-decoration: underline;
+  color: #ee3309;
+}
+
+.dragble-list3-products .shoping-card-d {
+  border-radius: 50px;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.dragble-list3-products .shoping-card-d:hover {
+}
+.dragble-list3-products .item .shoping-card-d img {
+  align-items: center;
+  width: 250px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.dragble-list3-products .item .shoping-card-d img:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+  cursor: pointer;
+  border: 1px black solid;
+}
+
+.dragble-list3-products .item .shoping-card-d .title {
+  font-size: 1.3em;
+  color: black;
+  padding-left: 100px;
+}
+
+.dragble-list3-products .shoping-card-d .button .right .price {
+  font-size: 1.2em;
+  padding-left: 100px;
+  padding-top: 60px;
+}
+.dragble-list3-products .shoping-card-d .button .left {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.dragble-list3-products .shoping-card-d .button .left .extend-btn {
+  margin-left: 30px;
+  font-size: 1em;
+  display: flex;
+  color: white;
+  background-color: rgb(231, 69, 69);
+  width: 60px;
+  border-radius: 20px;
+  transition: 0.75s;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+.dragble-list3-products .shoping-card-d .button .left .extend-btn .b-text {
+  color: white;
+  display: none;
+  padding-left: 30px;
+}
+.dragble-list3-products
+  .shoping-card-d
+  .button
+  .left
+  .extend-btn:hover
+  .b-text {
+  color: white;
+  display: block;
+}
+.dragble-list3-products .shoping-card-d .button .left .extend-btn .b-icon {
+  color: white;
+}
+
+.dragble-list3-products .shoping-card-d .button .left .extend-btn:hover {
+  width: 80px;
+  font-size: 1.2em;
+}
+
+/*super offer section */
+
+.super-offer-section {
+  margin-top: 130px;
+  padding: 20px;
+  color: #0f0101f6;
+  position: relative;
+  margin-left: 80px;
+}
+
+.super-offer-section .super-offer-box {
+  padding: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  box-shadow: 0px 10px 8px 10px rgba(0, 0, 0, 0.349);
+  border-radius: 50px;
+  position: relative;
+}
+
+.super-offer-box .title-sec-offer {
+  color: #ca0d0df6;
+  font-size: 1.5em;
+  background-color: rgba(255, 0, 0, 0.315);
+  padding: 5px;
+  margin-right: 80px;
+  position: absolute;
+  bottom: 230px;
+  right: 5px;
+}
+.super-offer-section .super-offer-box .body .image-container img {
+  width: 70%;
+  text-align: center;
+}
+
+.super-offer-box .body .spesification .price {
+  text-decoration: underline;
+}
+.super-offer-box .body .spesification .off {
+  text-decoration: underline;
+}
+.super-offer-box .body .spesification .title {
+  font-size: 1.7em;
+  color: #d13613;
+}
+.super-offer-box .body .spesification .counter-down {
+  border-top: solid 2px;
+  color: #d13613;
+  font-size: 1.7em;
+}
+
+.super-offer-section .banner img {
+  width: 25%;
+  position: absolute;
+  left: 10px;
+}
+/* about-site-section  */
+.about-sec {
+  margin: 80px;
+  text-align: center;
+  background-color: rgb(226, 223, 218);
+  border-radius: 50px;
+}
+.about-sec .about-title {
+  padding: 100px;
+  font-size: 1.3em;
+}
+
+.about-sec span {
+  border: solid 1px;
+  font-size: 1.2em;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: white;
+  margin-left: 50px;
+}
+
+/* apartment flowers */
+
+.apartment-flowers-section {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.apartment-flowers-section .shoping-card-1-apartment {
+  margin-top: 100px;
+}
+.apartment-flowers-section
+  .shoping-card-1-apartment
+  .title-shoping-card-1-apartment {
+  color: black;
+  text-decoration: underline;
+}
+
+/* flower box */
+
+.flower-box-section {
+  font-size: 1.3em;
+  text-align: center;
+}
+.flower-box-section .row {
+}
+.flower-box-section .shoping-card-f-box {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 25px;
+  border-radius: 200px;
+  padding: 30px;
+}
+.flower-box-section .shoping-card-f-box .image-sec img {
+  width: 90%;
+  height: 500px;
+  border-radius: 40px;
+}
+
+.flower-box-section .shoping-card-f-box .title-shoping-card-f-box {
+  color: black;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.flower-box-section .shoping-card-1-f-box {
+}
+.flower-box-section .shoping-card-1-f-box .title-shoping-card-1-f-box {
+  margin-top: 120px;
+  text-decoration: underline;
+}
+.flower-box-section .shoping-card-1-f-box .button-shoping-card-1-f-box button {
+  font-size: 1em;
+  background-color: white;
+  padding: 10px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+/* flower basket */
+
+.flower-basket-section {
+  font-size: 1em;
+  text-align: center;
+}
+.flower-basket-section .shoping-card-1-basket {
+  margin-top: 100px;
+}
+.flower-basket-section .shoping-card-1-basket .title-shoping-card-1-basket {
+  color: black;
+  text-decoration: underline;
+}
+
+.flower-basket-section
+  .shoping-card-1-basket
+  .button-shoping-card-1-basket
+  button {
+  font-size: 1.1em;
+  background-color: white;
+  padding: 10px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.flower-basket-section .shoping-card-basket {
+  text-align: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-right: 20px;
+  border-radius: 200px;
+  padding: 30px;
+}
+.flower-basket-section .shoping-card-basket .image-sec img {
+  width: 90%;
+  height: 500px;
+  border-radius: 50px;
+}
+.flower-basket-section .shoping-card-basket .title-shoping-card-basket {
+  font-size: 1em;
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+
+/* flower stand */
+
+.flower-stand-section {
+  font-size: 1.1em;
+  text-align: center;
+}
+.flower-stand-section .shoping-card-stand {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 25px;
+  border-radius: 200px;
+  padding: 50px;
+}
+.flower-stand-section .shoping-card-stand .image-sec img {
+  width: 100%;
+  height: 500px;
+  border-radius: 140px;
+}
+
+.flower-stand-section .shoping-card-stand .title-shoping-card-stand {
+  color: black;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.flower-stand-section .shoping-card-1-stand {
+}
+.flower-stand-section .shoping-card-1-stand .title-shoping-card-1-stand {
+  margin-top: 120px;
+  text-decoration: underline;
+  color: black;
+}
+.flower-stand-section
+  .shoping-card-1-stand
+  .button-shoping-card-1-stand
+  button {
+  font-size: 1.1em;
+  background-color: white;
+  padding: 10px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+/* about-site-section2  */
+
+.about-sec2 {
+  margin: 80px;
+  text-align: center;
+  background-color: rgb(226, 223, 218);
+  border-radius: 50px;
+  padding-left: 120px;
+}
+.about-sec2 .about-title2 {
+  text-align: center;
+  padding: 100px;
+  font-size: 1em;
+  margin-right: 120px;
+}
+
+.about-sec2 span {
+  border: solid 1px;
+  font-size: 0.9em;
+  margin-right: 50px;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: white;
+}
+.about-sec2 .span1 {
+  margin-right: 70px;
+}
+
+/* weblog */
+.weblog-section {
+  padding: 20px 10px;
+  font-size: 1em;
+  text-align: center;
+  align-items: center;
+}
+.weblog-section .title-web {
+  font-size: 1.3em;
+  color: #ee3309;
+  padding: 50px 30px;
+  text-decoration-line: underline;
+}
+.weblog-section .weblog-card {
+  text-align: center;
+  align-items: center;
+  margin: 10px 10px;
+  border-radius: 80px;
+  padding: 20px;
+}
+.weblog-section .h4 {
+  padding: 20px;
+  font-size: 0.9em;
+}
+.weblog-section button {
+  font-size: 0.8em;
+  padding: 15px;
+  background-color: rgb(226, 223, 218);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.weblog-section button:hover {
+  font-size: 0.9em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.weblog-section .image-sec {
+  position: relative;
+}
+
+.weblog-section .image-sec img {
+  width: 80%;
+  border-radius: 80px;
+  margin-bottom: 50px;
+}
+/* video */
+video {
+  width: 50%;
+  height: 50%;
+  height: auto;
+  margin-bottom: 100px;
+  border-radius: 80px;
+}
+/* title-finish */
+
+.finish {
+  text-align: center;
+}
+
+.title-finish {
+  font-size: 1.1em;
+  padding: 30px;
+  color: #ee3309;
+  animation-name: rotate;
+  text-decoration: underline;
+}
+
+/* footer */
+
+footer .call-us {
+  background-color: rgb(231, 231, 231);
+  font: size 1.2em;
+}
+footer .call-us .right .search input {
+  width: 20%;
+  border: none;
+  border-radius: 20px;
+  background: none;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.call-us .left .call-us-1 {
+  font-size: 1.1em;
+  margin-left: 30px;
+}
+.call-us .left .title {
+  margin-top: 30px;
+}
+footer .call-us button {
+  font-size: 1em;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgb(202, 200, 196);
+  margin-bottom: 20px;
+}
+footer .footer2 {
+  background-color: rgb(202, 200, 196);
+}
+
+footer .footer2 .right .title {
+  font-size: 1.2em;
+  padding-right: 20px;
+  color: black;
+}
+
+footer .footer2 .right .des {
+  font-size: 1.3em;
+  padding: 20px;
+  color: black;
+}
+footer .footer2 .left .title {
+  font-size: 1.2em;
+  color: black;
+}
+footer .footer2 .left .social {
+  margin-right: 30px;
+}
+
+footer .footer2 .left .social i {
+  font-size: 1.4em;
+  margin-right: 30px;
+  margin-top: 40px;
+  color: black;
+}
+footer .footer2 .bottom {
+  background-color: rgb(231, 231, 231);
+  padding: 30px;
+  font-size: 1.2em;
+  color: black;
+}
+/* btn-bottom */
+.btn-bottom {
+  position: fixed;
+  bottom: 0;
+  font-size: 1.3em;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgb(202, 200, 196);
+  color: black;
+  cursor: pointer;
+  animation: wiggle 3s linear infinite;
+  transform-origin: 40% 5em;
+}
+.text-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 1.3em;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 50px;
+  color: black;
+  background-color: rgb(202, 200, 196);
+}
+.text-bottom:hover {
+  cursor: pointer;
+}
+
+.scroll-container {
+  background-color: rgb(202, 200, 196);
+  overflow: auto;
+  white-space: nowrap;
+
+  margin-left: 40px;
+  margin-bottom: 100px;
+}
+
+.scroll-container img {
+  padding: 10px;
+}
